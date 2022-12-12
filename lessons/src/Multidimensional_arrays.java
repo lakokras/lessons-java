@@ -1,16 +1,20 @@
+import java.util.Arrays;
+
+import static java.lang.System.*;
+
 public class Multidimensional_arrays {
     public static void main (String[] args) {
         int[] number = {1, 2, 3}; // одномерный массив
 
-        int[][] matrice = {{1, 2, 3}, // двумерный массив
+        int[][] matrices = {{1, 2, 3}, // двумерный массив
                             {4, 5, 6},
                             {7, 8, 9}};
 
-        for (int i = 0; i < matrice.length; i++) {
-            for (int j = 0; j < matrice[i].length; j++) {
-                System.out.print(matrice[i][j] + " ");
+        for (int[] ints : matrices) {
+            for (int anInt : ints) {
+                out.print(anInt + " ");
             }
-            System.out.println();
+            out.println();
         }
     }
 }
